@@ -121,13 +121,10 @@ const BingoBoard: React.FC<BingoBoardProps> = ({ board }) => {
               }`}
               onClick={() => toggleCell(rowIndex, columnIndex)}
             >
-              <div className="row">
-                <img
-                    src={`https://img.pokemondb.net/sprites/ruby-sapphire/normal/${cell.toLowerCase()}.png`}
-                    alt={cell}
-                />
-                <span className="text-xs">{cell}</span>
-              </div>
+              <img
+                  src={`https://img.pokemondb.net/sprites/ruby-sapphire/normal/${cell.toLowerCase()}.png`}
+                  alt={cell}
+              />
             </div>
           ))}
         </div>
